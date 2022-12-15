@@ -37,3 +37,9 @@ jobs:
     - name: Test with test.py
       run: |
         python test.py
+    - name: Test Coverage of the files
+      run: |
+        pip install coverage
+        coverage run -m *.py
+        coverage report
+        
