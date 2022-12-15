@@ -40,6 +40,6 @@ jobs:
     - name: Test Coverage of the files
       run: |
         pip install coverage
-        coverage run -m *.py
+        coverage run -m main.py
         coverage report
         
